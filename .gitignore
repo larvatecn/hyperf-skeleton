@@ -40,6 +40,7 @@ Homestead.json
 Homestead.yaml
 
 # hyperf project files
+runtime/
 .env
 .env.backup
 .phpunit.result.cache
