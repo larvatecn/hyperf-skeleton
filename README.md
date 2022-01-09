@@ -4,7 +4,7 @@
 > 自己用的哈，仅供参考，不提供咨询解答服务。
 > 
 # Requirements
- - PHP >= 7.3
+ - PHP >= 7.4
  - Swoole PHP extension >= 4.5，and Disabled `Short Name`
  - OpenSSL PHP extension
  - JSON PHP extension
