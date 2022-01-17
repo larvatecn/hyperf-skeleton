@@ -12,3 +12,11 @@ declare(strict_types=1);
 use Hyperf\HttpServer\Router\Router;
 
 Router::addRoute(['GET', 'POST', 'HEAD'], '/', 'App\Controller\IndexController@index');
+
+/**
+ * Api 接口
+ */
+Router::addGroup('/api/v1', function () {
+    Router::post('/settings', 'App\Controller\Api\V1\SettingsController@store'); //保存系统设置
+
+}, ['middleware' => [\App\Middleware\ApiAuthMiddleware::class]]);

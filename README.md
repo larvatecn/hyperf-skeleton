@@ -1,6 +1,6 @@
-# Laravel API 基础模板
+# Hyperf API 基础模板
 
-开箱即用的 Laravel API 基础结构。
+开箱即用的 Hyperf API 基础结构。
 > 自己用的哈，仅供参考，不提供咨询解答服务。
 > 
 # Requirements
