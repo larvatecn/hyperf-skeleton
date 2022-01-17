@@ -36,7 +36,7 @@ class StopCommand extends HyperfCommand
     {
         $pidFile = $this->config->get('server.settings.' . Constant::OPTION_PID_FILE);
         if (! is_file($pidFile)) {
-            $this->warn('pid file not a file.');
+            $this->error('pid file not a file.');
         } else {
             $masterProcessId = file_get_contents($pidFile);
             $this->signal((int) $masterProcessId, SIGKILL);
